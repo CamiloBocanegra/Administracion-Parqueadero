@@ -1,8 +1,6 @@
 "# Administracion-Parqueadero" 
 
-
-
-
-"marcela-fernandez"
-Valerie Araque 
-Erika Rodriguez Cañar
+- Marcela Fernandez
+- Valerie Araque 
+- Erika Rodriguez Cañar
+- Camilo Andres Bocanegra
