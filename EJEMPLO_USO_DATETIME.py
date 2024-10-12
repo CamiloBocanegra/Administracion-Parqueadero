@@ -3,14 +3,14 @@ from datetime import datetime
 
 
 time1 = datetime.now()
-time1 = datetime.now()
+time2 = datetime.now()
 
 
 while(True):
    print("1. registrar entrada \n aaaaa")
    print("2. registrar salida")
    print("3. calcular tiempo transcurrido")
-   
+
    opcion_seleccionada = int(input("Digite una opcion: "))
 
    if(opcion_seleccionada == 1):      
