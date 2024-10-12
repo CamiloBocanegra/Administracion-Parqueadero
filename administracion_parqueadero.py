@@ -1,8 +1,7 @@
-from matriz import mostrar_matriz
+from matriz import mostrar_matrices
 # from Alquiler import alquiler
 # from registrar_salida import registrar_salida
 # from registrar_entrada import registrar_entrada
-# from matriz import mostrar_matriz
 # from Facturar import Facturar
 # from Informe import imforme_ocupacion
 
@@ -13,6 +12,12 @@ from datetime import datetime
 lista_carros = [{"numero":i, "estado":"D"} for i in range(50)]
 lista_motos = [{"numero":i, "estado":"D"} for i in range(25)]
 
+# ejemplos para visualizar la matriz en caso de que estos espacios estuvieran ocupados
+lista_carros[2]["estado"] = "A"
+lista_carros[33]["estado"] = "O"
+
+lista_motos[1]["estado"] = "A"
+lista_motos[15]["estado"] = "O"
 
 while(True):
    print("1. Mostrar matriz del parqueadero")
@@ -26,7 +31,7 @@ while(True):
    opcion_seleccionada = int(input("Digite una opcion: "))
 
    if(opcion_seleccionada == 1):      
-      mostrar_matriz(lista_carros, lista_motos)
+      mostrar_matrices(lista_carros, lista_motos)
 #    elif(opcion_seleccionada == 2):
 #       alquiler(lista_carros, lista_motos)
 #    elif(opcion_seleccionada == 3):
