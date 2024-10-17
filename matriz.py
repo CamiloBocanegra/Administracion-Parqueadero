@@ -4,9 +4,9 @@
 def mostrar_matrices(matriz_carros: list[dict], matriz_motos : list[dict]):
    matriz = ""
    for i in range(len(matriz_carros)):
-      estado_espacio = matriz_carros[i].get("estado")
+      estado_espacio = matriz_carros[i]
       if(estado_espacio == "D"): #disponible
-         matriz += f"v{matriz_carros[i].get("numero") + 1}"
+         matriz += f"v{i + 1}"
          if(i < 9):
             matriz += " "
       else:
@@ -20,9 +20,9 @@ def mostrar_matrices(matriz_carros: list[dict], matriz_motos : list[dict]):
    matriz += " *************************************** \n"
 
    for i in range(len(matriz_motos)):
-      estado_espacio = matriz_motos[i].get("estado")
+      estado_espacio = matriz_motos[i]
       if(estado_espacio == "D"): #disponible
-         matriz += f"m{matriz_motos[i].get("numero") + 1}"
+         matriz += f"m{i + 1}"
          if(i < 9):
             matriz += " "
       else:
