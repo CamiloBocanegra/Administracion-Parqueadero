@@ -75,4 +75,3 @@ def facturar(lista_carros, lista_motos):
       "hora_salida":None,
       "hora_alquiler":None
     }
-    
