@@ -1,21 +1,32 @@
-def alquiler(matriz_parqueadero, tipo_vehiculo,espacio_alquilar, placa):
+from Mostrar_matriz import mostrar_matrices
+
+def alquiler(lista_carros, lista_motos):
+    tipo_vehiculo = input("Tipo de vehiculo:")
+    placa = input("Ingrese número de placa: ")
+    numero_espacio = int(input ("Ingrese número espacio que se va a alquilar:"))-1
+
+    lista_vehiculos = lista_motos if tipo_vehiculo.lower() == "moto" else lista_carros
+
+    if not lista_vehiculos [numero_espacio]["alquilado"] and not lista_vehiculos[numero_espacio]["ocupado"]:
+        lista_vehiculos[numero_espacio]["alquilado"] = True
+        lista_vehiculos[numero_espacio]["placa"] = placa
+        print(f"El espacio {numero_espacio} ha sido alquilado")
+    else:
+        print("El espacio no esta disponible")
+
+
+
+    # if tipo_vehiculo == "Carro":
+    #     lista_vehiculos = lista_carros
+    # elif tipo_vehiculo == "moto":
+    #     lista_vehiculos = lista_motos
+    
+    # if lista_vehiculos[numero_espacio]["alquilado"] != "D":
+    #         print("Espacio no esta disponible")
+    # else:
+    #     lista_vehiculos[numero_espacio] = "A"
+    #     print(f"El espacio {numero_espacio} ha sido alquilado")
+
+     
+    
  
-  # Busca un espacio disponible para el tipo de vehículo
-  for fila in range(len(matriz_parqueadero)):
-    for columna in range(len(matriz_parqueadero[0])):
-      if matriz_parqueadero[fila][columna] == 'D':  
-        # Marca el espacio como alquilado y registra la hora de entrada
-        matriz_parqueadero[fila][columna] = 'A'
-        hora_entrada = obtener_hora_actual()  # Aquí debes implementar la función para obtener la hora actual
-        # ... (guardar la hora de entrada asociada al espacio, por ejemplo, en un diccionario)
-        return True
-      
-    tipos_vehiculos = {
-    "carro": ["A1", "B3", "C5"],
-    "moto": ["M1", "M2", "M3"],
-    "camioneta": ["C1", "C2"]
-}
-
-
-  # Si no se encontró ningún espacio disponible
-  return False
