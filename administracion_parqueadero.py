@@ -13,11 +13,11 @@ lista_carros = ["D" for i in range(50)]
 lista_motos = ["D" for i in range(25)]
 
 # ejemplos para visualizar la matriz en caso de que estos espacios estuvieran ocupados
-lista_carros[2]["estado"] = "A"
-lista_carros[33]["estado"] = "O"
+# lista_carros[2]["estado"] = "A"
+# lista_carros[33]["estado"] = "O"
 
-lista_motos[1]["estado"] = "A"
-lista_motos[15]["estado"] = "O"
+# lista_motos[1]["estado"] = "A"
+# lista_motos[15]["estado"] = "O"
 
 while(True):
    print("1. Mostrar matriz del parqueadero")
