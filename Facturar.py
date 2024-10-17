@@ -1,5 +1,5 @@
+from datetime import datetime
 
-<<<<<<< HEAD
 TARIFA_HORA = 2000
 
 def facturar(lista_carros, lista_motos):   
@@ -75,5 +75,4 @@ def facturar(lista_carros, lista_motos):
       "hora_salida":None,
       "hora_alquiler":None
     }
-=======
->>>>>>> e2bf88982a33329bddde7e4c281d983a785e8e5e
+    
