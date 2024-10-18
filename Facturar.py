@@ -35,7 +35,7 @@ def facturar(lista_carros, lista_motos):
         return
     
     if(alquilado):
-        comienzo_alquiler = lista_vehiculos[espacio_encontrado]["hora_alquilado"]
+        comienzo_alquiler = lista_vehiculos[espacio_encontrado]["hora_alquiler"]
         fin_alquiler = datetime.now()
 
         tiempo_ocupado = fin_alquiler - comienzo_alquiler
