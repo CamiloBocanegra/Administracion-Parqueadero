@@ -1,8 +1,8 @@
-from mostrar_matriz import mostrar_matrices
-from alquiler import alquiler
+from Mostrar_matriz import mostrar_matrices
+from Alquiler import alquiler
 from registrar_entrada import registrar_entrada
-from registrar_salida import registrar_salida
-from facturar import facturar
+from Registrar_salida import registrar_salida
+from Facturar import facturar
 # from Informe import imforme_ocupacion
 
 from datetime import datetime
